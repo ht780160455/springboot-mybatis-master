@@ -2,6 +2,9 @@ package cn.no7player.controller;
 
 import cn.no7player.model.User;
 import cn.no7player.service.UserService;
+
+import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,12 +24,14 @@ public class UserController {
 
 	@RequestMapping("/getUserInfo")
 	@ResponseBody
-	public User getUserInfo() {
-		User user = userService.getUserInfo();
-		if (user != null) {
-			System.out.println("user.getName():" + user.getZh());
-			logger.info("user.getAge():" + user.getMm());
+	public List<User> getUserInfo() {
+		List<User> users = userService.getUserInfo();
+		for (User user : users) {
+			if (user != null) {
+				System.out.println("user.getName():" + user.getZh());
+				logger.info("user.getAge():" + user.getMm());
+			}
 		}
-		return user;
+		return users;
 	}
 }
