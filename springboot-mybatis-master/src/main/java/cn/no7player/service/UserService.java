@@ -8,6 +8,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.github.pagehelper.PageHelper;
+
 /**
  * Created by zl on 2015/8/27.
  */
@@ -19,6 +21,7 @@ public class UserService {
 	private UserMapper userMapper;
 
 	public List<User> getUserInfo() {
+		PageHelper.startPage(1, 10);
 		List<User> users = userMapper.findUserInfo();
 		return users;
 	}

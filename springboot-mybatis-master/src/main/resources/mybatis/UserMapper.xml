@@ -3,7 +3,8 @@
 <mapper namespace="cn.no7player.mapper.UserMapper">
 
 	<select id="findUserInfo" resultType="cn.no7player.model.User">
-		select * from consumer;
+		select * from consumer
+		order by id
 	</select>
 
 </mapper>
