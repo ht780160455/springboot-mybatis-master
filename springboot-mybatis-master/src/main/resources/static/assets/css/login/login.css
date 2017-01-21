@@ -1,0 +1,154 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    min-width: 500px;
+    overflow: hidden;
+    font-family: "Microsoft YaHei";
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 500px) {
+    body, html {
+        overflow-x: auto;
+    }
+}
+
+body {
+    background-image:url(../../images/login/bgl.png);
+    background-size: 100% 100%;
+}
+
+.login {
+    position:relative;
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+
+.login .title label {
+    display: block;
+    font-size: 28px;
+    margin: 10px 0 25px 0;
+    letter-spacing: 2px;
+}
+
+.login .icon {
+    display: inline-block;
+    background: url(../../images/login/login.sprites.png) no-repeat;
+}
+
+.login .icon:after {
+    display: inline-block;
+    background: url(../../images/login/login.sprites.png) no-repeat;
+}
+
+.login .logo {
+    display: inline-block;
+    background: url(../../images/logo/logo.png) no-repeat;
+    background-size: 152px 44px;
+    width: 152px;
+    height: 44px;
+}
+
+.login .container {
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate3D(-50%,-50%,0);
+    transform:translate3D(-50%,-50%,0);
+}
+
+.login .body.icon {
+    position: relative;
+    background-position: -3px -8px;
+    width: 450px;
+    height: 253px;
+}
+
+.login .body.icon:after {
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    display: block;
+    background-position: -3px -275px;
+    width: 450px;
+    height: 84px;
+}
+
+.login .body .label {
+    padding: 22px 0;
+}
+
+.login .body .user-icon.icon {
+    background-position: -231px -4px;
+    background-size: 459px 206px;
+    width: 60px;
+    height: 69px;
+    margin-left: -115px;
+    margin-right: 25px;
+}
+.login .body .text-icon.icon {
+    background-position: -165px -57px;
+    background-size: 330px 148px;
+    width: 120px;
+    height: 54px;
+}
+
+.login .body .form-body {
+    overflow: hidden;
+    padding-left: 100px;
+}
+
+.login .body .form .form-input{
+    float:left;
+    margin-right: 20px;
+    margin-left: -30px;
+}
+
+.login .body .form .form-group{
+    margin-bottom: 20px;
+}
+
+.login .body .form .form-group .text{
+    color:white;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.login .body .form .form-input input{
+    width: 165px;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    box-shadow:0 0 0 2px #aaccdf;
+}
+
+.login .body .form .form-btn{
+    float:left;
+}
+
+.login .body .form .form-action input[type=checkbox]{
+    border: 1px solid white;
+    background-color: white;
+}
+
+.login .body .form .form-action span{
+    color:white;
+}
+
+.login .body .form .form-action input:first-child{
+    margin-left: -55px;
+}
+
+.login .body .form-btn .confirm.icon {
+    background-position: -589px -8px;
+    width: 85px;
+    height: 73px;
+    border: none;
+}
+
+.login .footer {
+    margin-top: 60px;
+}

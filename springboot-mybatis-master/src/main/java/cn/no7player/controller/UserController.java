@@ -24,8 +24,12 @@ public class UserController {
 
 	@RequestMapping("/getUserInfo")
 	@ResponseBody
-	public List<User> getUserInfo() {
-		List<User> users = userService.getUserInfo();
+	public List<User> getUserInfo(Integer id) {
+		List<User> users = null;
+		if (id == null) {
+			id = 1;
+		}
+		users = userService.getUserInfo(id);
 		for (User user : users) {
 			if (user != null) {
 				System.out.println("user.getName():" + user.getZh());
