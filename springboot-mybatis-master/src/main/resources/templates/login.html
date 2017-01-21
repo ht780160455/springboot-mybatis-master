@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="assets/js/dist/sweetalert.min.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="assets/js/dist/sweetalert.css"></link>
+<link rel='stylesheet' href='assets/css/login/login.css?v=1484206673'></link>
+</head>
+
+<body>
+	<section class="login">
+		<div class="container">
+			<div class="title">
+				<i class="logo"></i> <label>智能静电防控管理系统</label>
+			</div>
+			<div class="body icon">
+				<div class="label">
+					<i class="user-icon icon"></i> <i class="text-icon icon"></i>
+				</div>
+				<form class="form" id="login_form" method="post">
+					<div class="form-body">
+						<div class="form-input">
+							<div class="form-group">
+								<label class="text">账号</label> <input id="username"
+									name="username" type="text"></input>
+							</div>
+							<div class="form-group">
+								<label class="text">密码</label> <input id="password"
+									name="password" type="password"></input>
+							</div>
+						</div>
+						<div class="form-btn">
+							<button id="submit_btn" class="confirm icon" type="button"></button>
+						</div>
+					</div>
+					<input type="hidden" name="ajax" value="ajax" />
+				</form>
+			</div>
+			<div class="footer">版权所有：深圳联合净界科技有限公司</div>
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		var csrfParameter = $("meta[name='_csrf_parameter']").attr("content");
+		var csrfHeader = $("meta[name='_csrf_header']").attr("content");
+		var csrfToken = $("meta[name='_csrf']").attr("content");
+		var headers = {};
+		headers[csrfHeader] = csrfToken;
+		$(function() {
+			// 提交表单
+			$('#submit_btn').click(function() {
+				var username = $('#username').val();
+				var password = $('#password').val();
+				if (!username) {
+					swal({
+						title : "登陆失败!",
+						text : "账号不可为空",
+						type : "error",
+						confirmButtonText : "确定"
+					});
+					return;
+				}
+				if (!password) {
+					swal({
+						title : "登陆失败!",
+						text : "密码不可为空",
+						type : "error",
+						confirmButtonText : "确定"
+					});
+					return;
+				}
+
+				$.ajax({
+					url : '/login',
+					type : 'post',
+					headers : headers,
+					dataType : 'json',
+					data : $("#login_form").serializeArray(),
+					success : function(data) {
+						if (data.success == 'true') {
+							location.href = data.redirectURL;
+						} else {
+							swal({
+								title : "登陆失败!",
+								text : "请检查用户名密码是否正确",
+								type : "error",
+								confirmButtonText : "确定"
+							});
+						}
+					},
+					error : function(msg) {
+						swal({
+							title : "失败!",
+							text : "连接服务器失败，请检查网络",
+							type : "error",
+							confirmButtonText : "确定"
+						});
+					},
+				});
+
+			});
+		});
+	</script>
+
+</body>
+
+</html>

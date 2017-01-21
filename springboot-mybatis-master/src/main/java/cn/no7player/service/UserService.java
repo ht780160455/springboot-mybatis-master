@@ -20,8 +20,8 @@ public class UserService {
 	@Autowired
 	private UserMapper userMapper;
 
-	public List<User> getUserInfo() {
-		PageHelper.startPage(1, 10);
+	public List<User> getUserInfo(int id) {
+		PageHelper.startPage(id, 10);
 		List<User> users = userMapper.findUserInfo();
 		return users;
 	}

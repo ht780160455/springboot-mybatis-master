@@ -1,0 +1,296 @@
+.typeicon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.typeicon.i2 {
+    background-image: url(../images/type/normal/2.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.i3 {
+    background-image: url(../images/type/normal/3.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.i4 {
+    background-image: url(../images/type/normal/4.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.i5 {
+    background-image: url(../images/type/normal/5.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.i6 {
+    background-image: url(../images/type/normal/6.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.i7 {
+    background-image: url(../images/type/normal/7.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.i8 {
+    background-image: url(../images/type/normal/8.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.i9 {
+    background-image: url(../images/type/normal/9.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.i10 {
+    background-image: url(../images/type/normal/10.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.i11 {
+    background-image: url(../images/type/normal/11.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.i12 {
+    background-image: url(../images/type/normal/12.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.i13 {
+    background-image: url(../images/type/normal/13.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+
+.typeicon.alarm.i2 {
+    background-image: url(../images/type/alarm/2.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.alarm.i3 {
+    background-image: url(../images/type/alarm/3.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.alarm.i4 {
+    background-image: url(../images/type/alarm/4.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.alarm.i5 {
+    background-image: url(../images/type/alarm/5.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.alarm.i6 {
+    background-image: url(../images/type/alarm/6.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.alarm.i7 {
+    background-image: url(../images/type/alarm/7.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.alarm.i8 {
+    background-image: url(../images/type/alarm/8.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.alarm.i9 {
+    background-image: url(../images/type/alarm/9.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.alarm.i10 {
+    background-image: url(../images/type/alarm/10.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.alarm.i11 {
+    background-image: url(../images/type/alarm/11.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.alarm.i12 {
+    background-image: url(../images/type/alarm/12.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.alarm.i13 {
+    background-image: url(../images/type/alarm/13.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+
+.typeicon.fail.i2 {
+    background-image: url(../images/type/fail/2.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.fail.i3 {
+    background-image: url(../images/type/fail/3.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.fail.i4 {
+    background-image: url(../images/type/fail/4.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.fail.i5 {
+    background-image: url(../images/type/fail/5.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.fail.i6 {
+    background-image: url(../images/type/fail/6.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.fail.i7 {
+    background-image: url(../images/type/fail/7.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.fail.i8 {
+    background-image: url(../images/type/fail/8.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.fail.i9 {
+    background-image: url(../images/type/fail/9.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.fail.i10 {
+    background-image: url(../images/type/fail/10.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.fail.i11 {
+    background-image: url(../images/type/fail/11.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.fail.i12 {
+    background-image: url(../images/type/fail/12.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.fail.i13 {
+    background-image: url(../images/type/fail/13.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+
+.typeicon.offline.i2 {
+    background-image: url(../images/type/offline/2.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.offline.i3 {
+    background-image: url(../images/type/offline/3.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.offline.i4 {
+    background-image: url(../images/type/offline/4.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.offline.i5 {
+    background-image: url(../images/type/offline/5.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.offline.i6 {
+    background-image: url(../images/type/offline/6.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.offline.i7 {
+    background-image: url(../images/type/offline/7.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.offline.i8 {
+    background-image: url(../images/type/offline/8.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.offline.i9 {
+    background-image: url(../images/type/offline/9.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.offline.i10 {
+    background-image: url(../images/type/offline/10.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.offline.i11 {
+    background-image: url(../images/type/offline/11.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.offline.i12 {
+    background-image: url(../images/type/offline/12.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
+.typeicon.offline.i13 {
+    background-image: url(../images/type/offline/13.png);
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+}
