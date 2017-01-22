@@ -24,12 +24,12 @@ public class UserController {
 
 	@RequestMapping("/getUserInfo")
 	@ResponseBody
-	public List<User> getUserInfo(Integer id) {
+	public List<User> getUserInfo(Integer pageNum) {
 		List<User> users = null;
-		if (id == null) {
-			id = 1;
+		if (pageNum == null) {
+			pageNum = 1;
 		}
-		users = userService.getUserInfo(id);
+		users = userService.getUserInfo(pageNum);
 		for (User user : users) {
 			if (user != null) {
 				System.out.println("user.getName():" + user.getZh());

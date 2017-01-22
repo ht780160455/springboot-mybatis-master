@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>spring boot + mybatis + vue + elementui</title>
+    <title> elementui1</title>
     <link rel="stylesheet" href="http://cdn.bootcss.com/element-ui/1.1.2/theme-default/index.css">
     <script src="http://cdn.bootcss.com/vue/2.1.8/vue.min.js"></script>
     <script src="http://cdn.bootcss.com/element-ui/1.1.2/index.js"></script>
@@ -22,7 +22,7 @@
             <el-table-column prop="zh" label="用户名称"></el-table-column>
             <el-table-column prop="mm" label="密码"></el-table-column>
             <el-table-column prop="js" label="角色" :formatter="formatSex"></el-table-column>
-<!-- <el-table-column prop="createTime.time" label="创建时间" sortable :formatter="formatCreateDate"></el-table-column>
+            <!-- <el-table-column prop="createTime.time" label="创建时间" sortable :formatter="formatCreateDate"></el-table-column>
        -->
         </el-table>
         <el-col class="toolbar" style="padding:10px;">
@@ -36,7 +36,7 @@
     var vm = new Vue({
         el: '#vm',
         data: {
-        	tableData: [],
+            tableData: [],
             currentPage: 1,
             total: 10,
             listLoading: false,
@@ -58,46 +58,44 @@
                 if (this.zh && this.zh.trim() != "") {
                     params_['username'] = this.zh;
                 }
-                this.$http.get("http://localhost:8080/getUserInfo?id=", {
+                this.$http.get("http://localhost:8080/getUserInfo", {
                     params: params_
                 }).then(function(response) {
                     //console.log('111')
-                    console.log(response.data);
+                   // console.log(response.data);
                     this.total = response.data.count;
                     this.tableData = [];
-                    for (var key in response.data.list) {
-                        this.$set(this.tableData, key, response.data.list[key]);
+                    for (var key in response.data) {
+                        this.$set(this.tableData, key, response.data[key]);
                     }
-                  
-                    console.log(this.tableData);
                 }).catch(function(response) {
                     console.error(response);
-                    console.log('2222')
+                   // console.log('2222')
                 });
                 this.listLoading = false;
             },
-         /* formatDate: function getNowFormatDate(time) {
-                var date = new Date(time);
-                var seperator1 = "-";
-                var seperator2 = ":";
-                var month = date.getMonth() + 1;
-                var strDate = date.getDate();
-                if (month >= 1 && month <= 9) {
-                    month = "0" + month;
-                }
-                if (strDate >= 0 && strDate <= 9) {
-                    strDate = "0" + strDate;
-                }
-                var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate + " " + date.getHours() + seperator2 + date.getMinutes() + seperator2 + date.getSeconds();
-                return currentdate;
-            },
-            formatCreateDate: function(row, column) {
-                if (row.createTime != null) {
-                    return this.formatDate(row.createTime);
-                } else {
-                    return '';
-                }
-            },*/
+            /* formatDate: function getNowFormatDate(time) {
+                   var date = new Date(time);
+                   var seperator1 = "-";
+                   var seperator2 = ":";
+                   var month = date.getMonth() + 1;
+                   var strDate = date.getDate();
+                   if (month >= 1 && month <= 9) {
+                       month = "0" + month;
+                   }
+                   if (strDate >= 0 && strDate <= 9) {
+                       strDate = "0" + strDate;
+                   }
+                   var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate + " " + date.getHours() + seperator2 + date.getMinutes() + seperator2 + date.getSeconds();
+                   return currentdate;
+               },
+               formatCreateDate: function(row, column) {
+                   if (row.createTime != null) {
+                       return this.formatDate(row.createTime);
+                   } else {
+                       return '';
+                   }
+               },*/
             formatSex: function(row, column) {
                 if (row.js != null) {
                     return row.js == 1 ? '男' : '女';
