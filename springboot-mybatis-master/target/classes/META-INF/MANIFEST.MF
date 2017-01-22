@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Implementation-Title: springboot-mybatis
 Implementation-Version: 1.0-SNAPSHOT
-Built-By: Administrator
+Built-By: hasee
 Implementation-Vendor-Id: cn.7player.framework
 Build-Jdk: 1.8.0_112
 Created-By: Maven Integration for Eclipse

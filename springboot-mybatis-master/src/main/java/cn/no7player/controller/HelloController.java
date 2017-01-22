@@ -14,14 +14,14 @@ import org.springframework.web.servlet.ModelAndView;
 public class HelloController {
 
 	@RequestMapping("/hello")
-	public String greeting(@RequestParam(value = "name", required = false, defaultValue = "World") String name,
+	public String greeting(@RequestParam(value = "name", required = false, defaultValue = "World1") String name,
 			Model model) {
 		model.addAttribute("name", name);
 		return "hello";
 	}
 
 	@RequestMapping("/")
-	public ModelAndView index(@RequestParam(value = "name", required = false, defaultValue = "World") String name,
+	public ModelAndView index(@RequestParam(value = "name", required = false, defaultValue = "World2") String name,
 			Model model) {
 		model.addAttribute("name", name);
 		ModelAndView mav = new ModelAndView("index");
