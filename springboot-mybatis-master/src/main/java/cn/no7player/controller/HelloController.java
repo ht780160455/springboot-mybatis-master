@@ -20,13 +20,13 @@ public class HelloController {
 		return "hello";
 	}
 
-	@RequestMapping("/")
-	public ModelAndView index(@RequestParam(value = "name", required = false, defaultValue = "World2") String name,
-			Model model) {
-		model.addAttribute("name", name);
-		ModelAndView mav = new ModelAndView("index");
-		return mav;
-	}
+//	@RequestMapping("/")
+//	public ModelAndView index(@RequestParam(value = "name", required = false, defaultValue = "World2") String name,
+//			Model model) {
+//		model.addAttribute("name", name);
+//		ModelAndView mav = new ModelAndView("index");
+//		return mav;
+//	}
 
 	@RequestMapping(value = "login", method = RequestMethod.GET)
 	public ModelAndView login() {

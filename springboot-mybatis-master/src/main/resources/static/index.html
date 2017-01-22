@@ -18,10 +18,12 @@
             </el-col>
         </el-row>
         <el-table border fit :data="tableData" highlight-current-row style="width: 100%;font-size: 12px;">
-            <el-table-column prop="id" width="50"></el-table-column>
+            <el-table-column prop="id" label="ID" width="50"></el-table-column>
             <el-table-column prop="zh" label="用户名称"></el-table-column>
             <el-table-column prop="mm" label="密码"></el-table-column>
             <el-table-column prop="js" label="角色" :formatter="formatSex"></el-table-column>
+            <el-table-column prop="other" label="备注"></el-table-column>
+            <el-table-column   label="操作"></el-table-column>
             <!-- <el-table-column prop="createTime.time" label="创建时间" sortable :formatter="formatCreateDate"></el-table-column>
        -->
         </el-table>
